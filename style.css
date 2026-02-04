@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Poppins', 'Comic Sans MS', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden { display: none; }
+
+/* INTRO SCREEN */
+#intro {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+#intro button {
+  margin-top: 20px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MAIN CARD */
+#main-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 420px;
+  margin: 40px auto 0;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+/* Carousel */
+.carousel {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.nav {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 25px;
+  position: relative;
+  height: 60px;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #ccc;
+  position: absolute;
+}
+
+/* Confetti */
+#confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}

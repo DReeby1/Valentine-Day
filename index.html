@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- INTRO SCREEN -->
+  <div id="intro">
+    <h1>Hey love 💕</h1>
+    <p>I made something just for you.</p>
+    <button id="openBtn">Open it 💌</button>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div id="main-card" class="hidden">
+    <img src="images/hero.jpeg" alt="Us ❤️" class="hero-img" />
+
+    <h1>HIIII MY CUTEY 💕</h1>
+    <p>I decided to do something a little different this year :)</p>
+    <p>Considering I'm in IT, how else better than to ask you to be my Valentine? 🥰</p>
+    <p>Soooooo, will you be my Valentine? 💖</p>
+
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <button class="nav" id="prev">‹</button>
+      <img id="carousel-img" src="images/picture1.jpeg" />
+      <button class="nav" id="next">›</button>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button id="yesBtn">YES 💖</button>
+      <button id="noBtn">Hmm… 🤔</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
