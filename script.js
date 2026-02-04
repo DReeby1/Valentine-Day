@@ -12,7 +12,7 @@ noBtn.addEventListener("mouseover", () => {
 // CAROUSEL
 const images = [
   "images/Picture1.jpeg",
-  "images/Picture2.jpeg",
+  "images/Picture5.jpeg",
   "images/Picture3.jpeg",
   "images/Picture4.jpeg",
 ];
