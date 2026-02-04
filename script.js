@@ -1,11 +1,8 @@
-// SHOW CARD AFTER INTRO
-document.getElementById("openBtn").addEventListener("click", () => {
-  document.getElementById("intro").classList.add("hidden");
-  document.getElementById("main-card").classList.remove("hidden");
-});
-
 // RUNAWAY BUTTON
 const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+const message = document.getElementById("message");
+
 noBtn.addEventListener("mouseover", () => {
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 100 - 50;
@@ -14,9 +11,10 @@ noBtn.addEventListener("mouseover", () => {
 
 // CAROUSEL
 const images = [
-  "images/picture1.jpeg",
-  "images/picture2.jpeg",
-  "images/picture3.jpeg"
+  "images/Picture1.jpeg",
+  "images/Picture2.jpeg",
+  "images/Picture3.jpeg",
+  "images/Picture4.jpeg",
 ];
 let index = 0;
 
@@ -33,8 +31,6 @@ document.getElementById("prev").onclick = () => {
 };
 
 // CONFETTI
-const yesBtn = document.getElementById("yesBtn");
-const message = document.getElementById("message");
 const canvas = document.getElementById("confetti");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -69,3 +65,4 @@ yesBtn.addEventListener("click", () => {
   createConfetti();
   setInterval(drawConfetti, 16);
 });
+
